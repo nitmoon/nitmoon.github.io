@@ -2,10 +2,8 @@
 
 
 
-  
 
-
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next gemini" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -99,10 +97,10 @@
     root: '/',
     scheme: 'Gemini',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: {"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
       author: '博主'
@@ -351,12 +349,13 @@
 
       
         
-          <h1 id="图解HTTP笔记"><a href="#图解HTTP笔记" class="headerlink" title="图解HTTP笔记"></a>图解HTTP笔记</h1><h2 id="了解Web及网络基础"><a href="#了解Web及网络基础" class="headerlink" title="了解Web及网络基础"></a>了解Web及网络基础</h2><h3 id="TCP-IP"><a href="#TCP-IP" class="headerlink" title="TCP / IP"></a>TCP / IP</h3><ul>
+          <!-- # 图解HTTP笔记 -->
+<h2 id="了解Web及网络基础"><a href="#了解Web及网络基础" class="headerlink" title="了解Web及网络基础"></a>了解Web及网络基础</h2><h3 id="TCP-IP"><a href="#TCP-IP" class="headerlink" title="TCP / IP"></a>TCP / IP</h3><ul>
 <li><p>TCP / IP的分层管理</p>
 <p>TCP/IP 协议族里重要的一点就是分层。TCP/IP 协议族按层次分别分为以下 4 层：应用层、传输层、网络层和数据链路层。</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/03/05/图解HTTP笔记/#more" rel="contents">
+            <a class="btn" href="/2019/03/05/图解HTTP笔记/" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -521,7 +520,7 @@
 <p>所谓<code>Promise</code>，简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。从语法上说，<code>Promise</code>是一个对象，从它可以获取异步操作的消息。<code>Promise</code>提供统一的 API，各种异步操作都可以用同样的方法进行处理。</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2019/03/05/Promise/#more" rel="contents">
+            <a class="btn" href="/2019/03/05/Promise/" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -684,14 +683,13 @@
       <div class="footer-inner">
         <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">NitMoon</span>
 
   
 </div>
 
-<!--
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
@@ -701,9 +699,9 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a></div>
 
--->
+
 
 
 <!--markdown mermaid-->
@@ -730,6 +728,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
