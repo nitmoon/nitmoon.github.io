@@ -92,7 +92,7 @@
 <meta property="og:image" content="https://static.nitmoon.com/2020/03/aa6e19552022e12da26cc4afb5a8a22f.png">
 <meta property="og:image" content="https://static.nitmoon.com/2020/03/16839afab2b7d4b5427e91ac6ed3985e.png">
 <meta property="og:image" content="https://static.nitmoon.com/2020/03/c340c8adcc5de65ddf288ea302bfbf7a.png">
-<meta property="og:updated_time" content="2020-03-25T11:44:32.075Z">
+<meta property="og:updated_time" content="2020-03-26T01:37:48.721Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript原型">
 <meta name="twitter:description" content="图解原型链铁三角关系12function Person() &amp;#123;&amp;#125;let p = new Person();  这个图描述了构造函数，实例对象和原型对象三者之间的关系，是原型链的基础：">
@@ -514,7 +514,7 @@
 <h3 id="instanceof操作符"><a href="#instanceof操作符" class="headerlink" title="instanceof操作符"></a>instanceof操作符</h3><blockquote>
 <p>instanceof 用来判断一个构造函数的prototype属性所指向的对象是否存在另外一个要检测对象的原型链上</p>
 </blockquote>
-<p>更形象来说，对于 A instanceof B来说，它的判断规则是：沿着A的<strong>proto</strong>这条线来找，同时沿着B的prototype这条线来找，如果两条线能找到同一个引用，即同一个对象，那么就返回true。如果找到终点还未重合，则返回false。</p>
+<p>更形象来说，对于 A instanceof B来说，它的判断规则是：沿着A的__proto__这条线来找，同时沿着B的prototype这条线来找，如果两条线能找到同一个引用，即同一个对象，那么就返回true。如果找到终点还未重合，则返回false。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person();</span><br><span class="line"><span class="built_in">console</span>.log(p <span class="keyword">instanceof</span> <span class="built_in">Object</span>);<span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(p <span class="keyword">instanceof</span> Person);<span class="comment">//true</span></span><br></pre></td></tr></table></figure>
 
       
