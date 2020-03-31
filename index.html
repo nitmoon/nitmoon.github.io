@@ -374,9 +374,10 @@
       
         
           <!-- # JavaScript原型-->
-<h2 id="图解原型链"><a href="#图解原型链" class="headerlink" title="图解原型链"></a>图解原型链</h2><h3 id="铁三角关系"><a href="#铁三角关系" class="headerlink" title="铁三角关系"></a>铁三角关系</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="keyword">let</span> p = <span class="keyword">new</span> Person();</span><br></pre></td></tr></table></figure>
-<p><img src="https://static.nitmoon.com/2020/03/d0595c11a1f380699ddbc5ebba301d51.png" alt="图1.1" style="zoom: 80%;"></p>
-<p>这个图描述了构造函数，实例对象和原型对象三者之间的关系，是原型链的基础：</p>
+<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><h3 id="原型的定义和作用"><a href="#原型的定义和作用" class="headerlink" title="原型的定义和作用"></a>原型的定义和作用</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line"><span class="keyword">let</span> p = <span class="keyword">new</span> Person();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>构造函数的prototype属性（Person.prototype），也可以说实例对象的原型（p.__proto__）</p>
+</blockquote>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/11/12/JavaScript原型/" rel="contents">
