@@ -91,8 +91,8 @@
 <meta property="og:image" content="https://static.nitmoon.com/2020/03/5cc549b3171b7ad550969a5d7f68b97a.png">
 <meta property="og:image" content="https://static.nitmoon.com/2020/03/aa6e19552022e12da26cc4afb5a8a22f.png">
 <meta property="og:image" content="https://static.nitmoon.com/2020/03/16839afab2b7d4b5427e91ac6ed3985e.png">
-<meta property="og:image" content="https://static.nitmoon.com/2020/03/c340c8adcc5de65ddf288ea302bfbf7a.png">
-<meta property="og:updated_time" content="2020-04-01T02:16:32.641Z">
+<meta property="og:image" content="https://static.nitmoon.com/2020/03/172f8f37bbde8256635492c5a5031714.png">
+<meta property="og:updated_time" content="2020-04-01T03:17:05.518Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript原型">
 <meta name="twitter:description" content="1. 定义1.1 原型的定义和作用12function Person() &amp;#123;&amp;#125;;let p = new Person();  构造函数的prototype属性（Person.prototype），也可以说实例对象的原型（p.__proto__）">
@@ -468,7 +468,7 @@
 <p><img src="https://static.nitmoon.com/2020/03/16839afab2b7d4b5427e91ac6ed3985e.png" alt="图2.1"></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">&#123; name = <span class="string">"小A"</span>, age = <span class="number">21</span> &#125; = &#123;&#125;</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name = name;</span><br><span class="line">  <span class="keyword">this</span>.age = age;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 情况1：在修改原型属性前实例化对象</span></span><br><span class="line"><span class="keyword">let</span> p1 = <span class="keyword">new</span> Person();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 重写原型对象，新对象没有constructor属性，所以丢失</span></span><br><span class="line">Person.prototype = &#123;</span><br><span class="line">  sayName: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 情况2：在修改原型属性后实例化对象</span></span><br><span class="line"><span class="keyword">let</span> p2 = <span class="keyword">new</span> Person();</span><br><span class="line"></span><br><span class="line">p1.sayName(); <span class="comment">// p1.sayName is not a function</span></span><br><span class="line">p2.sayName(); <span class="comment">// "小A"</span></span><br></pre></td></tr></table></figure>
 <p>重写原型对象的方式，会改变实例对象的原型链，入下图所示</p>
-<p><img src="https://static.nitmoon.com/2020/03/c340c8adcc5de65ddf288ea302bfbf7a.png" alt="图2.2"></p>
+<p><img src="https://static.nitmoon.com/2020/03/172f8f37bbde8256635492c5a5031714.png" alt="图2.2"></p>
 <p>但是，为什么p1的原型链没有变，而p2的原型链变了呢？</p>
 <p><strong>当实例对象被创建时，其原型链就已经确定了，当其对应的原型属性指向改变时，也无法改变原型链</strong></p>
 <p>原型链是以实例对象为核心的，不能被原型对象的改变而误导。</p>
