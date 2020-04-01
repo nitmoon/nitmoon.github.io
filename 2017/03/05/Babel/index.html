@@ -77,18 +77,18 @@
 
 
 
-<meta name="description" content="概述Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以现在就用 ES6 编写程序，而不用担心现有环境是否支持。 1234567// 转码前input.map(item =&amp;gt; item + 1);// 转码后input.map(function (item) &amp;#123;  return item + 1;&amp;#125;);">
+<meta name="description" content="1. 概述Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以现在就用 ES6 编写程序，而不用担心现有环境是否支持。 1234567// 转码前input.map(item =&amp;gt; item + 1);// 转码后input.map(function (item) &amp;#123;  return item + 1;&amp;#125;);">
 <meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Babel">
 <meta property="og:url" content="https://nitmoon.github.io/2017/03/05/Babel/index.html">
 <meta property="og:site_name" content="NitMoon">
-<meta property="og:description" content="概述Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以现在就用 ES6 编写程序，而不用担心现有环境是否支持。 1234567// 转码前input.map(item =&amp;gt; item + 1);// 转码后input.map(function (item) &amp;#123;  return item + 1;&amp;#125;);">
+<meta property="og:description" content="1. 概述Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以现在就用 ES6 编写程序，而不用担心现有环境是否支持。 1234567// 转码前input.map(item =&amp;gt; item + 1);// 转码后input.map(function (item) &amp;#123;  return item + 1;&amp;#125;);">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-06T02:24:05.002Z">
+<meta property="og:updated_time" content="2020-04-01T02:19:06.395Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Babel">
-<meta name="twitter:description" content="概述Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以现在就用 ES6 编写程序，而不用担心现有环境是否支持。 1234567// 转码前input.map(item =&amp;gt; item + 1);// 转码后input.map(function (item) &amp;#123;  return item + 1;&amp;#125;);">
+<meta name="twitter:description" content="1. 概述Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以现在就用 ES6 编写程序，而不用担心现有环境是否支持。 1234567// 转码前input.map(item =&amp;gt; item + 1);// 转码后input.map(function (item) &amp;#123;  return item + 1;&amp;#125;);">
 
 
 
@@ -349,7 +349,7 @@
                   <span class="post-meta-item-text">阅读时长 <!-- &asymp; --></span>
                 
                 <span title="阅读时长">
-                  5
+                  6
                 </span>
               
             <!-- </div> -->
@@ -371,11 +371,11 @@
 
       
         <!-- # Babel -->
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以现在就用 ES6 编写程序，而不用担心现有环境是否支持。</p>
+<h2 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h2><p>Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以现在就用 ES6 编写程序，而不用担心现有环境是否支持。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 转码前</span></span><br><span class="line">input.map(<span class="function"><span class="params">item</span> =&gt;</span> item + <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 转码后</span></span><br><span class="line">input.map(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> item + <span class="number">1</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>上面的原始代码用了箭头函数，这个特性还没有得到广泛支持，Babel将其转为普通函数，就能在现有的JavaScript环境执行了。</p>
-<h2 id="转译器"><a href="#转译器" class="headerlink" title="转译器"></a>转译器</h2><ul>
+<h2 id="2-转译器"><a href="#2-转译器" class="headerlink" title="2. 转译器"></a>2. 转译器</h2><ul>
 <li><p>转译插件（<code>plugins</code>）</p>
 <p>转译插件是用来转译单一功能的插件，比如<code>transform-es2015-arrow-functions</code>，这个插件只负责转译es2015新增的箭头函数。</p>
 </li>
@@ -396,7 +396,7 @@
 </li>
 </ol>
 <p>另外你可以对<code>babel</code>已有的转译器进行改造或者创建新的转译器。如何创建<code>babel</code>转译器可以点<a href="http://babeljs.io/docs/plugins/" target="_blank" rel="noopener">这里</a>。</p>
-<h2 id="babelrc"><a href="#babelrc" class="headerlink" title=".babelrc"></a>.babelrc</h2><p>Babel的配置文件是<code>.babelrc</code>，存放在项目的根目录下。使用Babel的第一步，就是配置这个文件。</p>
+<h2 id="3-babelrc"><a href="#3-babelrc" class="headerlink" title="3. .babelrc"></a>3. .babelrc</h2><p>Babel的配置文件是<code>.babelrc</code>，存放在项目的根目录下。使用Babel的第一步，就是配置这个文件。</p>
 <p>该文件用来设置转码规则（<code>presets</code>）和插件（<code>plugins</code>）。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"presets"</span>: [],</span><br><span class="line">  <span class="string">"plugins"</span>: []</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><code>Babel</code>在转译代码的过程中会自动读取当前目录<code>.babelrc</code>配置文件，如果当前目录没有的话就遍历整个目录树去寻找，直到找到<code>.babelrc</code>文件或者含有”babel”字段的<code>package.json</code>文件，然后使用这些配置选项来转译代码。</p>
@@ -406,11 +406,11 @@
 <li>如果你的<code>.babelrc</code>或者你的命令行使用了你没有安装的转译器（<code>presets</code>），代码就会报错</li>
 <li>但<code>.babelrc</code>中的配置跟你在命令行中使用的配置冲突的时候，以<code>.babelrc</code>中的配置为准</li>
 </ol>
-<h3 id="presets"><a href="#presets" class="headerlink" title="presets"></a>presets</h3><p><code>presets</code>字段设定转码规则，官方提供以下的规则集，你可以根据需要安装。</p>
+<h3 id="3-1-presets"><a href="#3-1-presets" class="headerlink" title="3.1 presets"></a>3.1 presets</h3><p><code>presets</code>字段设定转码规则，官方提供以下的规则集，你可以根据需要安装。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ES2015转码规则</span></span><br><span class="line">$ npm install --save-dev babel-preset-es2015</span><br><span class="line"></span><br><span class="line"><span class="comment"># react转码规则</span></span><br><span class="line">$ npm install --save-dev babel-preset-react</span><br><span class="line"></span><br><span class="line"><span class="comment"># ES7不同阶段语法提案的转码规则（共有4个阶段），选装一个</span></span><br><span class="line">$ npm install --save-dev babel-preset-stage-0</span><br><span class="line">$ npm install --save-dev babel-preset-stage-1</span><br><span class="line">$ npm install --save-dev babel-preset-stage-2</span><br><span class="line">$ npm install --save-dev babel-preset-stage-3</span><br></pre></td></tr></table></figure>
 <p>然后，将这些规则加入<code>.babelrc</code>。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   <span class="string">"presets"</span>: [</span><br><span class="line">     <span class="string">"es2015"</span>,</span><br><span class="line">     <span class="string">"react"</span>,</span><br><span class="line">     <span class="string">"stage-2"</span></span><br><span class="line">   ],</span><br><span class="line">   <span class="string">"plugins"</span>: []</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="babel-cli"><a href="#babel-cli" class="headerlink" title="babel-cli"></a>babel-cli</h2><p>Babel提供<code>babel-cli</code>工具，用于命令行转码。</p>
+<h2 id="4-babel-cli"><a href="#4-babel-cli" class="headerlink" title="4. babel-cli"></a>4. babel-cli</h2><p>Babel提供<code>babel-cli</code>工具，用于命令行转码。</p>
 <p>安装</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install babel-cli -g</span><br></pre></td></tr></table></figure>
 <p>基本用法如下。</p>
@@ -422,7 +422,7 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">  <span class="string">"devDependencies"</span>: &#123;</span><br><span class="line">    <span class="string">"babel-cli"</span>: <span class="string">"^6.0.0"</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">"scripts"</span>: &#123;</span><br><span class="line">    <span class="string">"build"</span>: <span class="string">"babel src -d lib"</span></span><br><span class="line">  &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>转码的时候，就执行下面的命令。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm run build</span><br></pre></td></tr></table></figure>
-<h2 id="常见的转译器和插件"><a href="#常见的转译器和插件" class="headerlink" title="常见的转译器和插件"></a>常见的转译器和插件</h2><ol>
+<h2 id="5-常见的转译器和插件"><a href="#5-常见的转译器和插件" class="headerlink" title="5. 常见的转译器和插件"></a>5. 常见的转译器和插件</h2><ol>
 <li><p><code>babel-preset-env</code></p>
 <p>转译器，最常用的转译器。通过在.babelrc中配置env选项，可以让代码兼容不同版本的浏览器或者node。浏览器或者node已经支持的语法将不再转译了，不支持的才转译。如果不配置env选项，该转译器等同于babel-preset-latest。</p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"presets"</span>: [</span><br><span class="line">    [<span class="string">"env"</span>, &#123;</span><br><span class="line">      <span class="attr">"targets"</span>: &#123;</span><br><span class="line">        <span class="attr">"browsers"</span>: [<span class="string">"last 2 versions"</span>, <span class="string">"safari &gt;= 7"</span>]</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;]</span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -630,7 +630,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#转译器"><span class="nav-number">2.</span> <span class="nav-text">转译器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#babelrc"><span class="nav-number">3.</span> <span class="nav-text">.babelrc</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#presets"><span class="nav-number">3.1.</span> <span class="nav-text">presets</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#babel-cli"><span class="nav-number">4.</span> <span class="nav-text">babel-cli</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见的转译器和插件"><span class="nav-number">5.</span> <span class="nav-text">常见的转译器和插件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-概述"><span class="nav-number">1.</span> <span class="nav-text">1. 概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-转译器"><span class="nav-number">2.</span> <span class="nav-text">2. 转译器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-babelrc"><span class="nav-number">3.</span> <span class="nav-text">3. .babelrc</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-presets"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 presets</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-babel-cli"><span class="nav-number">4.</span> <span class="nav-text">4. babel-cli</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-常见的转译器和插件"><span class="nav-number">5.</span> <span class="nav-text">5. 常见的转译器和插件</span></a></li></ol></div>
             
 
           </div>

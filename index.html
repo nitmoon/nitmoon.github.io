@@ -374,7 +374,7 @@
       
         
           <!-- # JavaScript原型-->
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><h3 id="原型的定义和作用"><a href="#原型的定义和作用" class="headerlink" title="原型的定义和作用"></a>原型的定义和作用</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line"><span class="keyword">let</span> p = <span class="keyword">new</span> Person();</span><br></pre></td></tr></table></figure>
+<h2 id="1-定义"><a href="#1-定义" class="headerlink" title="1. 定义"></a>1. 定义</h2><h3 id="1-1-原型的定义和作用"><a href="#1-1-原型的定义和作用" class="headerlink" title="1.1 原型的定义和作用"></a>1.1 原型的定义和作用</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params"></span>) </span>&#123;&#125;;</span><br><span class="line"><span class="keyword">let</span> p = <span class="keyword">new</span> Person();</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>构造函数的prototype属性（Person.prototype），也可以说实例对象的原型（p.__proto__）</p>
 </blockquote>
@@ -544,7 +544,7 @@
       
         
           <!-- # this关键字 -->
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><code>this</code>可以用在构造函数之中，表示实例对象。除此之外，<code>this</code>还可以用在别的场合。但不管是什么场合，<code>this</code>都有一个共同点：它总是返回一个对象。</p>
+<h2 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h2><p><code>this</code>可以用在构造函数之中，表示实例对象。除此之外，<code>this</code>还可以用在别的场合。但不管是什么场合，<code>this</code>都有一个共同点：它总是返回一个对象。</p>
 <p>简单说，<code>this</code>就是属性或方法“当前”所在的对象。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.property</span><br></pre></td></tr></table></figure>
 <p>上面代码中，<code>this</code>就代表<code>property</code>属性当前所在的对象。</p>
@@ -883,7 +883,7 @@
       
         
           <!-- # Promise对象 -->
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><code>Promise</code> 是异步编程的一种解决方案。</p>
+<h2 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h2><p><code>Promise</code> 是异步编程的一种解决方案。</p>
 <p>所谓<code>Promise</code>，简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果。从语法上说，<code>Promise</code>是一个对象，从它可以获取异步操作的消息。<code>Promise</code>提供统一的 API，各种异步操作都可以用同样的方法进行处理。</p>
           <!--noindex-->
           <div class="post-button text-center">
@@ -1028,7 +1028,7 @@
                   <span class="post-meta-item-text">阅读时长 <!-- &asymp; --></span>
                 
                 <span title="阅读时长">
-                  5
+                  6
                 </span>
               
             <!-- </div> -->
@@ -1051,7 +1051,7 @@
       
         
           <!-- # Babel -->
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以现在就用 ES6 编写程序，而不用担心现有环境是否支持。</p>
+<h2 id="1-概述"><a href="#1-概述" class="headerlink" title="1. 概述"></a>1. 概述</h2><p>Babel是一个广泛使用的转码器，可以将ES6代码转为ES5代码，从而在现有环境执行。这意味着，你可以现在就用 ES6 编写程序，而不用担心现有环境是否支持。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 转码前</span></span><br><span class="line">input.map(<span class="function"><span class="params">item</span> =&gt;</span> item + <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 转码后</span></span><br><span class="line">input.map(<span class="function"><span class="keyword">function</span> (<span class="params">item</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> item + <span class="number">1</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
